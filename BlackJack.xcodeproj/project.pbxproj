@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F5624E4B1F525CAB001DF9C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5624E4A1F525CAB001DF9C7 /* main.m */; };
+		F5624E541F525E4C001DF9C7 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F5624E531F525E4C001DF9C7 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		F5624E471F525CAB001DF9C7 /* BlackJack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlackJack; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5624E4A1F525CAB001DF9C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5624E511F525D34001DF9C7 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		F5624E531F525E4C001DF9C7 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				F5624E4A1F525CAB001DF9C7 /* main.m */,
+				F5624E511F525D34001DF9C7 /* Card.h */,
+				F5624E531F525E4C001DF9C7 /* Card.m */,
 			);
 			path = BlackJack;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5624E4B1F525CAB001DF9C7 /* main.m in Sources */,
+				F5624E541F525E4C001DF9C7 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +225,7 @@
 		F5624E4F1F525CAB001DF9C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = BXG36P3LDT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -227,6 +234,7 @@
 		F5624E501F525CAB001DF9C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = BXG36P3LDT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
