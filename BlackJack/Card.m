@@ -11,14 +11,12 @@
 
 @implementation Card
 
--(id)initWithParams:(NSString *)suit value:(NSString*) value {
+-(id)initWithParams:(NSString *)suit_ value:(NSString*) value_ {
     self = [super init];
-    [suit retain];
-    [value retain];
-    self.suit = suit;
-    self.value = value;
-    [suit release];
-    [value release];
+    if(self) {
+        self.suit = suit_;
+        self.value = value_;
+    }
     return self;
 }
 

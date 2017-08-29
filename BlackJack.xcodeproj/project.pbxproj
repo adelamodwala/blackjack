@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F5624E4B1F525CAB001DF9C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5624E4A1F525CAB001DF9C7 /* main.m */; };
 		F5624E541F525E4C001DF9C7 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = F5624E531F525E4C001DF9C7 /* Card.m */; };
+		F5624ED01F54F745001DF9C7 /* CliController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5624ECF1F54F745001DF9C7 /* CliController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +27,10 @@
 /* Begin PBXFileReference section */
 		F5624E471F525CAB001DF9C7 /* BlackJack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BlackJack; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5624E4A1F525CAB001DF9C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F5624E511F525D34001DF9C7 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
-		F5624E531F525E4C001DF9C7 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		F5624E511F525D34001DF9C7 /* Card.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Card.h; path = ../Card.h; sourceTree = "<group>"; };
+		F5624E531F525E4C001DF9C7 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = ../Card.m; sourceTree = "<group>"; };
+		F5624ECE1F54F3E2001DF9C7 /* CliController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CliController.h; sourceTree = "<group>"; };
+		F5624ECF1F54F745001DF9C7 /* CliController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CliController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +63,29 @@
 		F5624E491F525CAB001DF9C7 /* BlackJack */ = {
 			isa = PBXGroup;
 			children = (
+				F5624ECD1F54F3C4001DF9C7 /* controller */,
+				F5624ECC1F54F39C001DF9C7 /* domain */,
 				F5624E4A1F525CAB001DF9C7 /* main.m */,
+			);
+			path = BlackJack;
+			sourceTree = "<group>";
+		};
+		F5624ECC1F54F39C001DF9C7 /* domain */ = {
+			isa = PBXGroup;
+			children = (
 				F5624E511F525D34001DF9C7 /* Card.h */,
 				F5624E531F525E4C001DF9C7 /* Card.m */,
 			);
-			path = BlackJack;
+			path = domain;
+			sourceTree = "<group>";
+		};
+		F5624ECD1F54F3C4001DF9C7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5624ECE1F54F3E2001DF9C7 /* CliController.h */,
+				F5624ECF1F54F745001DF9C7 /* CliController.m */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5624E4B1F525CAB001DF9C7 /* main.m in Sources */,
+				F5624ED01F54F745001DF9C7 /* CliController.m in Sources */,
 				F5624E541F525E4C001DF9C7 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +281,7 @@
 				F5624E501F525CAB001DF9C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

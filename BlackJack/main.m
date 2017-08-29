@@ -8,21 +8,23 @@
 
 #import <Foundation/Foundation.h>
 #import "Card.h"
+#import "CliController.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    int x = 44;
-    NSLog(@"Hello, World!%d", x);
     
-    Card * card1 = [[Card alloc] initWithParams:@"spades" value:@"ace"];
-    Card * card2 = [[Card alloc] initWithParams:@"hearts" value:@"8"];
+    //MARK: Init
+    NSLog(@"starting");
+    CliController * cliController = [CliController alloc];
     
-    NSLog(@"%@, %@", [card1 toString], [card2 toString]);
     
-    [card1 dealloc];
-    [card2 dealloc];
+    //MARK: Start Loop
+    [cliController getWelcomePrompt];
     
-    NSLog(@"Bye!");
+    
+    //MARK: Clean Up
+    [cliController dealloc];
+    
+    NSLog(@"exiting");
     
     return 0;
 }

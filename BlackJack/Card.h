@@ -13,7 +13,7 @@
 @property (nonatomic,retain) NSString * suit;
 @property (nonatomic,retain) NSString * value;
 
--(id)initWithParams:(NSString *)suit value:(NSString*) value;
+-(id)initWithParams:(NSString *)suit_ value:(NSString*) value_;
 -(NSString *)toString;
 -(void)dealloc;
 
